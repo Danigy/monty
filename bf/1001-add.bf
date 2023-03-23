@@ -1,5 +1,8 @@
-,>,          # read two single-digit numbers from user and store in cells 1 and 2
-[
-  ->+<       # add cells 1 and 2 and store the result in cell 1
-]
->.           # print the result (cell 1)
+read num (ascii - 48) into block #1
+>,-----------------------------------------------
+read num (ascii - 48 ('0')) into block #2
+>,-----------------------------------------------
+[<<+>>-] add block #2 to block #0
+<[<+>-] add block #1 to block #0
+<++++++++++++++++++++++++++++++++++++++++++++++++
+. print contents of block #0
